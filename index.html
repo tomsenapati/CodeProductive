@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Code Productive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ////////////// log in modal ////////////////-->
+  
+  <div id="load-modal" class="modal">
+    <div class="modal-content center-align">
+      <h5>Please enter your GitHub profile below</h5>
+      <br>
+      <div class="container searchContainer">
+        <div class=" search card black">
+          <div class="card-content white-text">
+            <div class="input-field">
+              <input placeholder="" id="searchUser" class="white-text center-align" type="text" autocomplete="off">
+            </div>
+            <div id="profile"></div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="modal-footer row">
+        <a href="#" id="modal-submit" class="btn-flat btn-large waves-effect">
+          <h5>Get Productive!</h5>
+        </a>
+    </div>
+    </div> 
+  </div>
+
+  <!-- //////////////////// main ///////////////////////////-->
+
+
+
+  <nav class="teal">
+    <div class="nav-wrapper">
+      <div class="logo-container">
+        <a href="#" class="brand-logo">Code Productive</a>
+      </div>
+
+      <div id="id-display" class="row hide-on-small-only"></div>   
+      <div id="id-img-small"></div>
+      
+      
+    </div> 
+  </nav>
+<div id="welcome-container" class="container">
+  <div id="welcome-banner"></div>
+  <div class="divider"></div> 
+  <div id="welcome-message">
+    <h3>What's the motive for today?</h3>
+  </div>
+</div>
+
+
+
+<div class="row">
+
+  <div class="col s12 m6">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Daily Goals</span>
+        <div class="row">
+          <form id="task-form">
+            <div class="input-field col s12">
+              <input type="text" name="task" id="task" autocomplete="off">
+              <label for="task">Goals</label>
+            </div>
+            <input type="submit" value="Add Goal" class="btn">
+          </form>
+        </div>
+      </div>
+      <div class="card-action">
+        <div class="input-field col s12">
+          <input type="text" name="filter" id="filter">
+          <label for="filter">Filter</label>
+        </div>
+        <ul class="collection"></ul>
+        <a href="#" class="clear-tasks btn black">Clear all</a>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="col s12 m6">
+    <div class="card">
+      <div class="card-content" id="pomodoro-timer-card">
+        <span class="card-title">Pomodoro Timer</span>
+        <div id="player-container">
+
+          <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+            </svg>
+            <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+              </svg>
+              <h3 class="time-display">00:00</h3>
+              
+        </div>
+        <div class="row">
+          <form id="time-form">
+            <div class="input-field col s12 l6">
+              <input type="number" name="focus" id="focus" autocomplete="off">
+              <label for="focus">Focus Time (mins)</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input type="number" name="down" id="down" autocomplete="off">
+              <label for="down">Down Time (mins)</label>
+            </div>
+            <input type="submit" value="Start" class="btn" id="time-submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="app.js"></script>
+</html>
+
+
+

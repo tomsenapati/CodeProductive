@@ -1,0 +1,68 @@
+nav {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+#id-display,
+#id-img-small {
+  cursor: pointer;
+}
+
+#welcome-container {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.logo-container {
+  padding-left: 2vw;
+}
+
+.mobile-icon {
+  position: absolute;
+  padding-top: 8px;
+  right: 2vw;
+  width: 40px;
+  height: 40px;
+}
+
+.profile-card {
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+}
+
+.user-name {
+  padding-top: 30px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+#player-container {
+  height: 80%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+#player-container svg {
+  position: absolute;
+  left: 50%;
+  top: 20vh;
+  width: 300px;
+  transform: translate(-50%, -50%) scaleX(-1) rotate(-90deg);
+}
+
+.time-display {
+  position: absolute;
+  top: 13vh;
+}
+
+#time-form {
+  padding-top: 40vh;
+}
